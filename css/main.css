@@ -9,3 +9,10 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif; }
+
+.header {
+  width: 95%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 1% auto; }
