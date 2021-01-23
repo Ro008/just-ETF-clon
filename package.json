@@ -1,0 +1,14 @@
+{
+  "name": "justetfclon",
+  "version": "1.0.0",
+  "description": "A simplify version of JustETF website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Ro",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
