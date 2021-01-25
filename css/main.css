@@ -16,3 +16,32 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1% auto; }
+  .header .top-menu-container {
+    display: flex;
+    margin: 3% 0;
+    justify-content: space-between; }
+
+.language-dropdown .current-lang {
+  cursor: pointer;
+  width: 50px;
+  padding: 5px; }
+  .language-dropdown .current-lang:hover {
+    background-color: #e6f0ec; }
+
+.language-dropdown .options-list {
+  display: none;
+  background-color: white;
+  list-style: none;
+  width: 100px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em; }
+  .language-dropdown .options-list li {
+    padding: 5px; }
+    .language-dropdown .options-list li:hover {
+      cursor: pointer;
+      background-color: #e6f0ec; }
+
+.language-dropdown a {
+  text-decoration: none; }
