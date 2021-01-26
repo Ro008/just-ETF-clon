@@ -8,7 +8,40 @@ html {
   box-sizing: inherit; }
 
 body {
+  margin: 0; }
+
+.main-container {
+  margin: 0 auto; }
+  .main-container.homepage {
+    width: 70%; }
+
+body {
   font-family: 'Raleway', sans-serif; }
+
+.btn-primary {
+  color: white;
+  background-color: #11986D;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #387562; }
+
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  column-gap: 15px;
+  justify-content: flex-end; }
+  .footer i {
+    cursor: pointer;
+    color: #ECA991; }
+    .footer i:hover {
+      color: #DA3C02; }
 
 .header {
   width: 95%;

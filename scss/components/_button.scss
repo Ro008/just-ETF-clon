@@ -1,0 +1,12 @@
+.btn-primary {
+  color: white;
+  background-color: $brand-color;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+}
