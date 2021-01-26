@@ -1,6 +1,5 @@
 .header {
   width: 95%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   margin: 1% auto;
@@ -17,6 +16,22 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  .top-menu {
+    display: flex;
+    column-gap: 15px;
+    align-items: baseline;
+
+    span {
+      color: $brand-color;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $light-green;
+      }
     }
   }
 }

@@ -12,7 +12,6 @@ body {
 
 .header {
   width: 95%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   margin: 1% auto; }
@@ -25,6 +24,16 @@ body {
     height: 100px; }
     .header .logo img {
       width: 100%; }
+  .header .top-menu {
+    display: flex;
+    column-gap: 15px;
+    align-items: baseline; }
+    .header .top-menu span {
+      color: #11986D;
+      padding: 5px;
+      cursor: pointer; }
+      .header .top-menu span:hover {
+        background-color: #e6f0ec; }
 
 .language-dropdown .current-lang {
   cursor: pointer;
