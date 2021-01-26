@@ -61,6 +61,8 @@ body {
     display: flex;
     column-gap: 15px;
     align-items: baseline; }
+    .header .top-menu a {
+      text-decoration: none; }
     .header .top-menu span {
       color: #11986D;
       padding: 5px;

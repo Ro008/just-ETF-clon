@@ -24,6 +24,10 @@
     column-gap: 15px;
     align-items: baseline;
 
+    a {
+     text-decoration: none;
+    }
+    
     span {
       color: $brand-color;
       padding: 5px;
