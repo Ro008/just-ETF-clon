@@ -6,7 +6,11 @@
   'base/typography',
   'base/variables';
 
-// 2. Components
+// 2. pages
+@import
+ 'pages/etf-screener.scss';
+
+// 3. Components
 @import
   'components/button',
   'components/footer',

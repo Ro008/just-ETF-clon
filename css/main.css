@@ -15,8 +15,57 @@ body {
   .main-container.homepage {
     width: 70%; }
 
-body {
+body,
+button {
   font-family: 'Raleway', sans-serif; }
+
+.etf-screener {
+  margin: 0 auto;
+  width: 90%; }
+  .etf-screener .results {
+    display: flex;
+    justify-content: flex-end; }
+    .etf-screener .results span:nth-child(2) {
+      font-weight: bold; }
+  .etf-screener .results-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; }
+    .etf-screener .results-container .assets-filter {
+      width: 20%;
+      display: flex;
+      flex-direction: column; }
+      .etf-screener .results-container .assets-filter span {
+        border: 1px solid #387562;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px 0 10px 5px;
+        cursor: pointer; }
+    .etf-screener .results-container .table-container {
+      width: 70%; }
+      .etf-screener .results-container .table-container .buttons {
+        display: flex;
+        column-gap: 15px; }
+      .etf-screener .results-container .table-container .table {
+        border: 2px solid #e6f0ec;
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 5px; }
+        .etf-screener .results-container .table-container .table .row {
+          display: flex;
+          padding: 5px 0; }
+          .etf-screener .results-container .table-container .table .row .row-header {
+            font-weight: bold;
+            width: 30%; }
+          .etf-screener .results-container .table-container .table .row .row-content {
+            width: 30%;
+            cursor: pointer; }
+        .etf-screener .results-container .table-container .table .row:not(:last-child) {
+          border-bottom: 1px solid #e6f0ec; }
+        .etf-screener .results-container .table-container .table .row:not(:first-child) {
+          cursor: pointer; }
+          .etf-screener .results-container .table-container .table .row:not(:first-child):hover {
+            background-color: #e6f0ec; }
 
 .btn-primary {
   color: white;
@@ -27,6 +76,16 @@ body {
   cursor: pointer; }
   .btn-primary:hover {
     background-color: #387562; }
+
+.btn-chip {
+  color: #11986D;
+  background-color: white;
+  padding: 10px 15px;
+  border: 1px solid #11986D;
+  border-radius: 20px;
+  cursor: pointer; }
+  .btn-chip:hover {
+    background-color: #e6f0ec; }
 
 .footer {
   display: flex;
@@ -69,6 +128,10 @@ body {
       cursor: pointer; }
       .header .top-menu span:hover {
         background-color: #e6f0ec; }
+
+.searchbar input {
+  width: 300px;
+  border-radius: 5px; }
 
 .language-dropdown .current-lang {
   cursor: pointer;
