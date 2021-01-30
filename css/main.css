@@ -19,6 +19,10 @@ body,
 button {
   font-family: 'Raleway', sans-serif; }
 
+.etf-profile {
+  width: 90%;
+  margin: 0 auto; }
+
 .etf-screener {
   margin: 0 auto;
   width: 90%; }
@@ -86,6 +90,11 @@ button {
   cursor: pointer; }
   .btn-chip:hover {
     background-color: #e6f0ec; }
+
+.link {
+  color: #11986D; }
+  .link:visited {
+    color: #11986D; }
 
 .footer {
   display: flex;
@@ -157,3 +166,7 @@ button {
 
 .language-dropdown a {
   text-decoration: none; }
+
+.breadcrumbs {
+  background-color: #e6f0ec;
+  padding: 5px 0 5px 15px; }

@@ -8,7 +8,8 @@
 
 // 2. pages
 @import
- 'pages/etf-screener.scss';
+ 'pages/etf-profile',
+ 'pages/etf-screener';
 
 // 3. Components
 @import
@@ -16,4 +17,5 @@
   'components/footer',
   'components/header',
   'components/searchbar',
-  'components/language-dropdown';
+  'components/language-dropdown',
+  'components/breadcrumbs';

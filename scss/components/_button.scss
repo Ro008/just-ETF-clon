@@ -23,3 +23,11 @@
     background-color: $light-green;
   }
 }
+
+.link {
+  color: $brand-color;
+
+  &:visited {
+    color: $brand-color;
+  }
+}

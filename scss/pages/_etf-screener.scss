@@ -1,12 +1,9 @@
 .etf-screener {
   margin: 0 auto;
   width: 90%;
-  // border: 1px solid blue;
 
   .results {
     display: flex;
-    // width: 50%;
-    // border: 1px solid firebrick;
     justify-content: flex-end;
 
     span:nth-child(2) {
@@ -16,7 +13,6 @@
 
   .results-container {
     display: flex;
-    // border: 1px solid aqua;
     justify-content: space-around;
     margin-top: 20px;
 
