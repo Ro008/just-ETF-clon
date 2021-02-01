@@ -8,6 +8,10 @@
     display: flex;
     margin-top: 1%;
     justify-content: space-between;
+
+    .favourites-menu-item {
+      display: none;
+    }
   }
 
   .logo {
@@ -25,9 +29,9 @@
     align-items: baseline;
 
     a {
-     text-decoration: none;
+      text-decoration: none;
     }
-    
+
     span {
       color: $brand-color;
       padding: 5px;

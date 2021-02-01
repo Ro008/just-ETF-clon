@@ -128,6 +128,12 @@ button {
           .etf-screener .results-container .table-container .table .row:not(:first-child):hover {
             background-color: #e6f0ec; }
 
+.favourites-page {
+  width: 80%;
+  margin: 0 auto; }
+  .favourites-page ul span {
+    font-weight: bold; }
+
 .btn-primary {
   color: white;
   background-color: #11986D;
@@ -186,6 +192,8 @@ button {
     display: flex;
     margin-top: 1%;
     justify-content: space-between; }
+    .header .top-menu-container .favourites-menu-item {
+      display: none; }
   .header .logo {
     width: 100px;
     height: 100px; }
