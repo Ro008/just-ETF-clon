@@ -11,6 +11,18 @@
   }
 }
 
+.btn-secondary {
+  border: 2px solid $brand-color;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $light-green;
+  }
+}
+
 .btn-chip {
   color: $brand-color;
   background-color: white;

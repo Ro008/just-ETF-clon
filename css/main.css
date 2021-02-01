@@ -21,7 +21,64 @@ button {
 
 .etf-profile {
   width: 90%;
-  margin: 0 auto; }
+  height: 100%;
+  margin: 0 auto 100px auto; }
+  .etf-profile .title {
+    display: flex;
+    align-items: center;
+    gap: 15px; }
+  .etf-profile .tabs {
+    display: flex;
+    gap: 15px; }
+    .etf-profile .tabs span {
+      padding: 5px; }
+      .etf-profile .tabs span:hover {
+        cursor: pointer;
+        background-color: #ECA991; }
+    .etf-profile .tabs .active-tab {
+      font-weight: bold;
+      border-bottom: 4px solid #DA3C02; }
+  .etf-profile .overview {
+    width: 60%; }
+  .etf-profile .chart-container {
+    display: flex;
+    flex-direction: column; }
+    .etf-profile .chart-container .periods {
+      display: flex;
+      justify-content: center;
+      gap: 10px; }
+    .etf-profile .chart-container .chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0; }
+      .etf-profile .chart-container .chart .graph {
+        border: 1px solid aqua;
+        width: 200px;
+        height: 100px;
+        margin-bottom: 10px; }
+  .etf-profile .table {
+    border: 2px solid #e6f0ec;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%; }
+    .etf-profile .table .row {
+      display: flex;
+      padding: 5px 0; }
+      .etf-profile .table .row .row-header {
+        font-weight: bold;
+        width: 10%; }
+      .etf-profile .table .row .row-content {
+        width: 20%;
+        display: flex;
+        flex-direction: column; }
+        .etf-profile .table .row .row-content .amount {
+          color: #387562;
+          font-size: 0.9rem;
+          font-weight: bold; }
+    .etf-profile .table .row:not(:last-child) {
+      border-bottom: 1px solid #e6f0ec; }
 
 .etf-screener {
   margin: 0 auto;
@@ -80,6 +137,15 @@ button {
   cursor: pointer; }
   .btn-primary:hover {
     background-color: #387562; }
+
+.btn-secondary {
+  border: 2px solid #11986D;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer; }
+  .btn-secondary:hover {
+    background-color: #e6f0ec; }
 
 .btn-chip {
   color: #11986D;
