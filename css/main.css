@@ -144,6 +144,43 @@ button {
   .favourites-page ul span {
     font-weight: bold; }
 
+.academy {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto 100px auto; }
+  .academy h1 {
+    margin-top: 0; }
+  .academy .top-books,
+  .academy .top-courses {
+    display: flex;
+    justify-content: space-around; }
+    .academy .top-books .book,
+    .academy .top-books .course,
+    .academy .top-courses .book,
+    .academy .top-courses .course {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #eee;
+      border-radius: 5px;
+      width: 40%;
+      padding: 10px; }
+      .academy .top-books .book:hover,
+      .academy .top-books .course:hover,
+      .academy .top-courses .book:hover,
+      .academy .top-courses .course:hover {
+        box-shadow: 3px 3px 3px #eee; }
+      .academy .top-books .book h4,
+      .academy .top-books .course h4,
+      .academy .top-courses .book h4,
+      .academy .top-courses .course h4 {
+        margin-top: 0; }
+      .academy .top-books .book img,
+      .academy .top-books .course img,
+      .academy .top-courses .book img,
+      .academy .top-courses .course img {
+        width: 10vw; }
+
 .btn-primary {
   color: white;
   background-color: #11986D;
