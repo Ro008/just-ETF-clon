@@ -5,19 +5,11 @@ const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 
 header.innerHTML = `
-    <div class="language-dropdown">
-      <div class="current-lang">
-        <span>EN</span>
-        <i class="fas fa-angle-down"></i>
-      </div>
-
-      <div class="lang-options">
-        <ul class="options-list">
-          <li class="en">English</li>
-          <li class="es">Español</li>
-        </ul>
-      </div>
+    <div class="lang-options">
+      <a href="#eng" class="data">EN</a>
+      <a href="#spa" class="data">SPA</a>
     </div>
+
     <div class="top-menu-container">
       <div class="logo">
         <a href="./index.html">
@@ -25,11 +17,11 @@ header.innerHTML = `
         </a>
       </div>
       <div class="top-menu">
-        <a href="./ETF-screener.html"><span>ETF screener</span></a>
-        <a href="./strategy-builder.html"><span>Strategy builder</span></a>
-        <a href="./academy.html"><span>Academy</span></a>
-        <a href="./login.html"><span>Login</span></a>
-        <a href="./favourites.html" class="favourites-menu-item"><span>Favourites</span></a>
+        <a href="./ETF-screener.html"><span id="screenerID">ETF screener</span></a>
+        <a href="./strategy-builder.html"><span id="strategyID">Strategy builder</span></a>
+        <a href="./academy.html"><span id="academyID">Academy</span></a>
+        <a href="./login.html"><span id="loginID">Login</span></a>
+        <a href="./favourites.html"><span id="favouritesID">Favourites</span></a>
       </div>
     </div>
 `;

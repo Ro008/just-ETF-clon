@@ -301,30 +301,22 @@ button {
   width: 300px;
   border-radius: 5px; }
 
-.language-dropdown .current-lang {
-  cursor: pointer;
-  width: 50px;
-  padding: 5px; }
-  .language-dropdown .current-lang:hover {
-    background-color: #e6f0ec; }
-
-.language-dropdown .options-list {
-  display: none;
+.lang-options {
   background-color: white;
   list-style: none;
   width: 100px;
-  position: absolute;
   margin: 0;
   padding: 0;
-  font-size: 0.8em; }
-  .language-dropdown .options-list li {
-    padding: 5px; }
-    .language-dropdown .options-list li:hover {
-      cursor: pointer;
+  font-weight: bold;
+  display: flex; }
+  .lang-options a {
+    padding: 5px;
+    color: #387562;
+    text-decoration: none; }
+    .lang-options a:hover {
+      background-color: #ECA991; }
+    .lang-options a.active {
       background-color: #e6f0ec; }
-
-.language-dropdown a {
-  text-decoration: none; }
 
 .breadcrumbs {
   background-color: #e6f0ec;
