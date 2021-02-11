@@ -36,4 +36,22 @@ footer.innerHTML = `
   <a href="https://www.instagram.com/ro_syper/" target="_blank"> <i class="fab fa-instagram"></i> </a>
 `;
 
-// ***************************************
+// **************************************************************
+// ************ add filters to the UI ***************************
+// **************************************************************
+
+const allAssetTypes = document.querySelectorAll('.assets-filter span');
+const chipsContainer = document.querySelector('.chips');
+
+allAssetTypes.forEach(assetType => {
+  assetType.addEventListener('click', () => {
+    chipsContainer.innerHTML += `
+      <button class="btn-chip">
+        <span>${assetType.textContent}</span>
+        <i class="far fa-times-circle"></i>
+      </button>
+    `;
+  })
+});
+
+// **************************************************************
