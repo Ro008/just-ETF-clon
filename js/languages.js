@@ -1,3 +1,5 @@
+"use strict"
+
 // define language reload anchors
 const dataReload = document.querySelectorAll('.data');
 
