@@ -72,3 +72,10 @@ allChips.forEach(chip => {
     chip.style.display = 'none';
   })
 });
+
+// remove all filters at the same time
+resetFiltersBtn.addEventListener('click', () => {
+  allChips.forEach(chip => {
+    chip.style.display = 'none';
+  })
+})
