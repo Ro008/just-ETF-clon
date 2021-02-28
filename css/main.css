@@ -239,6 +239,7 @@ button {
     background-color: #e6f0ec; }
 
 .btn-chip {
+  display: none;
   color: #11986D;
   background-color: white;
   padding: 10px 15px;
@@ -247,6 +248,8 @@ button {
   cursor: pointer; }
   .btn-chip:hover {
     background-color: #e6f0ec; }
+  .btn-chip:active, .btn-chip:focus {
+    outline: none; }
 
 .link {
   color: #11986D; }

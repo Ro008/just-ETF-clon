@@ -28,18 +28,29 @@
 
     <div class="results-container">
       <div class="assets-filter">
-        <span>All assets</span>
-        <span>Equity</span>
-        <span>Bonds</span>
-        <span>Real Estate</span>
+        <span class="all-assets">All assets</span>
+        <span class="equity">Equity</span>
+        <span class="bonds">Bonds</span>
+        <span class="real-estate">Real Estate</span>
       </div>
 
       <div class="table-container">
         <div class="buttons">
           <div class="chips">
-            <!-- inserted via JS -->
+            <button class="btn-chip equity">
+              <span>Equity</span>
+              <i class="far fa-times-circle"></i>
+            </button>
+            <button class="btn-chip bonds">
+              <span>Bonds</span>
+              <i class="far fa-times-circle"></i>
+            </button>
+            <button class="btn-chip real-estate">
+              <span>Real Estate</span>
+              <i class="far fa-times-circle"></i>
+            </button>
           </div>
-          <button class="btn-primary">Reset filters</button>
+          <button class="btn-primary reset-filters-btn">Reset filters</button>
         </div>
 
         <div class="table">

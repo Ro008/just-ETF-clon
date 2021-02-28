@@ -1,10 +1,21 @@
-"use strict"
+"use strict";
 
-// ***************************************
-// insert header and footer and all pages
-// ***************************************
+// **************************************************************
+// ************ global DOM variables ****************************
+// **************************************************************
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
+const allAssetTypes = document.querySelectorAll(".assets-filter span");
+const chipsContainer = document.querySelector(".chips");
+const allChips = document.querySelectorAll(".chips button");
+const equityChip = document.querySelector(".btn-chip.equity");
+const bondsChip = document.querySelector(".btn-chip.bonds");
+const realEstateChip = document.querySelector(".btn-chip.real-estate");
+const resetFiltersBtn = document.querySelector(".reset-filters-btn");
+
+// **************************************************************
+// ************ insert header and footer in all pages************
+// **************************************************************
 
 header.innerHTML = `
     <div class="lang-options">
@@ -40,18 +51,24 @@ footer.innerHTML = `
 // ************ add filters to the UI ***************************
 // **************************************************************
 
-const allAssetTypes = document.querySelectorAll('.assets-filter span');
-const chipsContainer = document.querySelector('.chips');
-
-allAssetTypes.forEach(assetType => {
-  assetType.addEventListener('click', () => {
-    chipsContainer.innerHTML += `
-      <button class="btn-chip">
-        <span>${assetType.textContent}</span>
-        <i class="far fa-times-circle"></i>
-      </button>
-    `;
-  })
+allAssetTypes.forEach((assetType) => {
+  assetType.addEventListener("click", () => {
+    if (assetType.textContent === "Equity") {
+      equityChip.style.display = "inline-block";
+    } else if (assetType.textContent === "Bonds") {
+      bondsChip.style.display = "inline-block";
+    } else if (assetType.textContent === "Real Estate") {
+      realEstateChip.style.display = "inline-block";
+    }
+  });
 });
 
 // **************************************************************
+// ************ remove filters from the UI **********************
+// **************************************************************
+
+allChips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chip.style.display = 'none';
+  })
+});
