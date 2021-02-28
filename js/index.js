@@ -60,6 +60,8 @@ allAssetTypes.forEach((assetType) => {
     } else if (assetType.textContent === "Real Estate") {
       realEstateChip.style.display = "inline-block";
     }
+
+    resetFiltersBtn.style.display = 'inline-block'
   });
 });
 
@@ -78,4 +80,4 @@ resetFiltersBtn.addEventListener('click', () => {
   allChips.forEach(chip => {
     chip.style.display = 'none';
   })
-})
+});

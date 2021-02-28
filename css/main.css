@@ -256,6 +256,9 @@ button {
   .link:visited {
     color: #11986D; }
 
+.reset-filters-btn {
+  display: none; }
+
 .footer {
   display: flex;
   position: fixed;
