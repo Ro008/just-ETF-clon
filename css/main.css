@@ -25,6 +25,9 @@ body {
       .main-container.strategy-builder .under-construction-container img {
         width: 30vw; }
 
+.d-none {
+  display: none; }
+
 body,
 button {
   font-family: 'Raleway', sans-serif; }
@@ -239,7 +242,6 @@ button {
     background-color: #e6f0ec; }
 
 .btn-chip {
-  display: none;
   color: #11986D;
   background-color: white;
   padding: 10px 15px;
@@ -255,9 +257,6 @@ button {
   color: #11986D; }
   .link:visited {
     color: #11986D; }
-
-.reset-filters-btn {
-  display: none; }
 
 .footer {
   display: flex;

@@ -54,14 +54,14 @@ footer.innerHTML = `
 allAssetTypes.forEach((assetType) => {
   assetType.addEventListener("click", () => {
     if (assetType.textContent === "Equity") {
-      equityChip.style.display = "inline-block";
+      equityChip.classList.remove('d-none');
     } else if (assetType.textContent === "Bonds") {
-      bondsChip.style.display = "inline-block";
+      bondsChip.classList.remove('d-none');
     } else if (assetType.textContent === "Real Estate") {
-      realEstateChip.style.display = "inline-block";
+      realEstateChip.classList.remove('d-none');
     }
 
-    resetFiltersBtn.style.display = 'inline-block'
+    resetFiltersBtn.classList.remove('d-none');
   });
 });
 
@@ -71,13 +71,13 @@ allAssetTypes.forEach((assetType) => {
 
 allChips.forEach(chip => {
   chip.addEventListener('click', () => {
-    chip.style.display = 'none';
+    chip.classList.add('d-none');
   })
 });
 
 // remove all filters at the same time
 resetFiltersBtn.addEventListener('click', () => {
   allChips.forEach(chip => {
-    chip.style.display = 'none';
+    chip.classList.add('d-none');
   })
 });
