@@ -1,17 +1,17 @@
-"use strict";
+'use strict';
 
 // **************************************************************
 // ************ global DOM variables ****************************
 // **************************************************************
-const header = document.querySelector(".header");
-const footer = document.querySelector(".footer");
-const allAssetTypes = document.querySelectorAll(".assets-filter span");
-const chipsContainer = document.querySelector(".chips");
-const allChips = document.querySelectorAll(".chips button");
-const equityChip = document.querySelector(".btn-chip.equity");
-const bondsChip = document.querySelector(".btn-chip.bonds");
-const realEstateChip = document.querySelector(".btn-chip.real-estate");
-const resetFiltersBtn = document.querySelector(".reset-filters-btn");
+const header = document.querySelector('.header');
+const footer = document.querySelector('.footer');
+const allAssetTypes = document.querySelectorAll('.assets-filter span');
+const chipsContainer = document.querySelector('.chips');
+const allChips = document.querySelectorAll('.chips button');
+const equityChip = document.querySelector('.btn-chip.equity');
+const bondsChip = document.querySelector('.btn-chip.bonds');
+const realEstateChip = document.querySelector('.btn-chip.real-estate');
+const resetFiltersBtn = document.querySelector('.reset-filters-btn');
 
 // **************************************************************
 // ************ insert header and footer in all pages************
@@ -52,12 +52,12 @@ footer.innerHTML = `
 // **************************************************************
 
 allAssetTypes.forEach((assetType) => {
-  assetType.addEventListener("click", () => {
-    if (assetType.textContent === "Equity") {
+  assetType.addEventListener('click', () => {
+    if (assetType.textContent === 'Equity') {
       equityChip.classList.remove('d-none');
-    } else if (assetType.textContent === "Bonds") {
+    } else if (assetType.textContent === 'Bonds') {
       bondsChip.classList.remove('d-none');
-    } else if (assetType.textContent === "Real Estate") {
+    } else if (assetType.textContent === 'Real Estate') {
       realEstateChip.classList.remove('d-none');
     }
 
@@ -69,15 +69,15 @@ allAssetTypes.forEach((assetType) => {
 // ************ remove filters from the UI **********************
 // **************************************************************
 
-allChips.forEach(chip => {
+allChips.forEach((chip) => {
   chip.addEventListener('click', () => {
     chip.classList.add('d-none');
-  })
+  });
 });
 
 // remove all filters at the same time
 resetFiltersBtn.addEventListener('click', () => {
-  allChips.forEach(chip => {
+  allChips.forEach((chip) => {
     chip.classList.add('d-none');
-  })
+  });
 });
